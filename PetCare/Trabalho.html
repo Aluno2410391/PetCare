@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Veterinária com serviços de cuidados para o seu pet.">
+    <title>Clínica Veterinária PetCare</title>
+    <link rel="stylesheet" href="Trabalho.css">
+</head>
+<body>
+    <!-- Cabeçalho do site (Logo e Navegação) -->
+    <header>
+        <div class="logo">
+            <!-- Logo da clínica (substitua "logo.png" pelo caminho da sua imagem de logo) -->
+            <img src="logo.png" alt="Logo da Clínica Veterinária PetCare">
+        </div>
+        <!-- Navegação do site -->
+        <nav>
+            <ul>
+                <!-- Menu de navegação com links para diferentes seções -->
+                <li><a href="#home">Início</a></li> 
+                <li><a href="#servicos">Serviços</a></li> 
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Boas-vindas -->
+        <section id="home" class="welcome">
+            <div class="content">
+                <h1>Bem-vindo à Clínica Veterinária PetCare</h1>
+                <p>Oferecemos cuidados de saúde para o seu pet com excelência e carinho!</p>
+                <button><a href="#servicos">Conheça nossos serviços</a></button>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico">
+                    <h3>Consulta Veterinária</h3>
+                    <p>A partir de R$ 150,00</p> <!-- Preço do serviço -->
+                    <p>Atendimento completo e personalizado para seu animalzinho.</p>
+                </div>
+                <div class="servico">
+                    <h3>Vacinação</h3>
+                    <p>A partir de R$ 80,00</p>
+                    <p>Vacinas essenciais para a saúde do seu pet.</p>
+                </div>
+                <div class="servico">
+                    <h3>Cirurgia</h3>
+                    <p>A partir de R$ 500,00</p>
+                    <p>Cirurgias de pequeno e médio porte com toda a segurança.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Imagens -->
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria-container">
+                <div class="imagem">
+                    <img src="images2.jpeg" alt="Animal atendido na clínica"> <!-- Imagem de um pet atendido -->
+                </div>
+                <div class="imagem">
+                    <img src="images.jpeg" alt="Consultório veterinário"> <!-- Imagem do consultório -->
+                </div>
+                <div class="imagem">
+                    <img src="images3.jpeg" alt="Equipe veterinária"> <!-- Imagem da equipe da clínica -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@petcare.com.br</p>
+            <!-- Formulário de Contato -->
+            <form action="enviar-contato.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Clínica Veterinária PetCare | Todos os direitos reservados</p>
+        <p>Feito por João Mendes, Henry,Isis Flausino Kaua Fernando,Paulo Henrique Diego Felipe.</p>
+    </footer>
+</body>
+</html>
